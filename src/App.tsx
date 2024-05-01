@@ -1,11 +1,13 @@
 import './App.css';
+import Header from './components/Header';
 
 import Navbar from './components/Navbar';
 
 const App = () => {
 	return (
-		<main className='lg:container m-auto max-w-[90%]'>
+		<main className='md:container max-w-[95%] m-auto px-6 gap-32 flex flex-col'>
 			<Navbar />
+			<Header />
 		</main>
 	);
 };
