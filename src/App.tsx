@@ -1,5 +1,6 @@
 import './App.css';
 import Education from './components/Education';
+import Footer from './components/Footer';
 import Header from './components/Header';
 
 import Navbar from './components/Navbar';
@@ -10,7 +11,7 @@ import Social from './components/Social';
 
 const App = () => {
 	return (
-		<main className='md:container max-w-[95%] m-auto px-6 gap-32 flex flex-col pb-[200px]'>
+		<main className='md:container max-w-[95%] m-auto px-6 gap-32 flex flex-col pb-16'>
 			<Navbar />
 			<Header />
 			<Presentation />
@@ -18,6 +19,7 @@ const App = () => {
 			<Projects />
 			<Education />
 			<Social />
+			<Footer />
 		</main>
 	);
 };
