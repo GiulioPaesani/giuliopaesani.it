@@ -1,4 +1,4 @@
-import Button from '../Button';
+import ContactMeButton from '../Button/ContactMeButton';
 import HiringText from './HiringText';
 import Subtitle from './Subtitle';
 import Title from './Title';
@@ -9,7 +9,7 @@ const Header = () => {
 			<HiringText />
 			<Title />
 			<Subtitle />
-			<Button type='primary' label='Contattami' icon='mail.svg' onClick={() => {}} />
+			<ContactMeButton />
 		</div>
 	);
 };
