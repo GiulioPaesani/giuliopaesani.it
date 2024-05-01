@@ -5,7 +5,7 @@ import Title from './Title';
 
 const Header = () => {
 	return (
-		<div className='w-full'>
+		<div id='header' className='w-full'>
 			<HiringText />
 			<Title />
 			<Subtitle />

@@ -54,7 +54,7 @@ const Projects = () => {
 	const [openedPopupIndex, setOpenedPopupIndex] = useState(null);
 
 	return (
-		<>
+		<div id='progetti'>
 			<ProjectPopup project={typeof openedPopupIndex === 'number' ? projects[openedPopupIndex] : null} setPopup={setOpenedPopupIndex} />
 			<h3 className='text-center text-3xl font-medium text-neutral-950 block xl:hidden'>I miei progetti</h3>
 			<div className='flex gap-40 h-[544px]'>
@@ -70,7 +70,7 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
