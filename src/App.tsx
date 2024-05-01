@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Presentation from './components/Presentation';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Social from './components/Social';
 
 const App = () => {
 	return (
@@ -16,6 +17,7 @@ const App = () => {
 			<Skills />
 			<Projects />
 			<Education />
+			<Social />
 		</main>
 	);
 };
