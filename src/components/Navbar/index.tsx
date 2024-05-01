@@ -1,4 +1,4 @@
-import ContactMeButton from '../Button/ContactMeButton';
+import ContactMeButton from '../global/ContactMeButton';
 import NavbarIcon from './NavbarIcon';
 import NavbarOptions from './NavbarOptions';
 

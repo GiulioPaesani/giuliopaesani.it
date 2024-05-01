@@ -1,4 +1,4 @@
-import Button from '../Button';
+import Card from '../global/Card';
 import { ProjectConfig } from './Project';
 
 type ProjectPopupProps = {
@@ -20,28 +20,20 @@ const ProjectPopup = ({ project, setPopup }: ProjectPopupProps) => {
 
 	return (
 		<div className=' bg-neutral-950/50 fixed top-0 left-0 z-50  w-full h-full flex items-center justify-center'>
-			<div className='bg-primary-500 rounded-lg w-4/5 lg:w-2/5 p-6'>
-				<div className='flex items-center gap-2'>
-					<h4 className='text-xl font-light text-primary-200'>{startDate}</h4>
-					<div className='size-1 bg-primary-200 rounded-full'></div>
-					<h4 className='text-xl font-light text-primary-200'>{endDate ?? 'Presente'}</h4>
-
-					<Button
-						type='tertiary'
-						icon='x.svg'
-						onClick={() => {
-							setPopup(null);
-							enableScroll();
-						}}
-						className='ml-auto'
-					/>
-				</div>
-				<h2 className='text-3xl font-medium text-neutral-50 my-2'>{name}</h2>
-				<h3 className='text-2xl font-light text-primary-200'>{job}</h3>
-				<div className='w-full h-48 rounded-lg bg-cover bg-center my-6' style={{ backgroundImage: `url("${thumbnail}")` }}></div>
-				<p className='text-2xl text-neutral-50'>{description}</p>
-				<Button type='tertiary' label={buttonLabel} icon='external-link.svg' onClick={buttonLink} className='mt-12' />
-			</div>
+			<Card
+				startDate={startDate}
+				endDate={endDate}
+				onClickCloseButton={() => {
+					setPopup(null);
+					enableScroll();
+				}}
+				title={name}
+				subTitle={job}
+				buttonLabel={buttonLabel}
+				buttonLink={buttonLink}
+				thumbnail={thumbnail}
+				fields={<p className='text-2xl text-neutral-50'>{description}</p>}
+			/>
 		</div>
 	);
 };
