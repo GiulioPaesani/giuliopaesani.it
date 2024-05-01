@@ -23,7 +23,7 @@ const skills = [
 const Skills = () => {
 	return (
 		<div>
-			<h3 className='text-center text-4xl font-medium text-neutral-950'>Competenze principali</h3>
+			<h3 className='text-center text-3xl font-medium text-neutral-950'>Competenze principali</h3>
 			<div className='flex justify-around mt-16 mb-10 flex-wrap'>
 				{skills.map(({ label, icon }) => (
 					<Skill label={label} icon={icon} />
