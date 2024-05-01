@@ -4,7 +4,7 @@ import NavbarOptions from './NavbarOptions';
 
 const Navbar = () => {
 	return (
-		<div className='w-full h-20 flex items-center sticky top-0'>
+		<div className='w-full h-20 flex items-center sticky top-0 bg-neutral-50/80'>
 			<NavbarIcon />
 			<NavbarOptions />
 			<Button type='primary' label='Contattami' icon='mail.svg' onClick={() => {}} className='ml-auto lg:ml-12' />
