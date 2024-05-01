@@ -1,8 +1,13 @@
-import React from 'react';
 import './App.css';
 
+import Navbar from './components/Navbar';
+
 const App = () => {
-	return <h2 className='font-bold text-center mt-16'>Sito in costruzione. Ci sono quasi!</h2>;
+	return (
+		<main className='lg:container m-auto max-w-[90%]'>
+			<Navbar />
+		</main>
+	);
 };
 
 export default App;
