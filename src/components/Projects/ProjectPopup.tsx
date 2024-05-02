@@ -16,7 +16,7 @@ const ProjectPopup = ({ project, setPopup }: ProjectPopupProps) => {
 
 	const enableScroll = () => (window.onscroll = null);
 
-	const { name, startDate, endDate, job, thumbnail, description, buttonLabel, buttonLink } = project;
+	const { name, startDate, endDate, job, thumbnail, buttonLabel, buttonLink, fields } = project;
 
 	return (
 		<div className=' bg-neutral-950/50 fixed top-0 left-0 z-50  w-full h-full flex items-center justify-center'>
@@ -32,7 +32,7 @@ const ProjectPopup = ({ project, setPopup }: ProjectPopupProps) => {
 				buttonLabel={buttonLabel}
 				buttonLink={buttonLink}
 				thumbnail={thumbnail}
-				fields={<p className='text-2xl text-neutral-50'>{description}</p>}
+				fields={fields}
 			/>
 		</div>
 	);

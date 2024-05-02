@@ -1,4 +1,7 @@
 import Card from '../global/Card';
+import FieldChips from '../global/FieldChips';
+import FieldDescription from '../global/FieldDescription';
+import FieldTitle from '../global/FieldTitle';
 
 const Graduation = () => {
 	return (
@@ -11,16 +14,12 @@ const Graduation = () => {
 			buttonLink='https://corsi.unibo.it/laurea/IngegneriaScienzeInformatiche'
 			fields={
 				<>
-					<h2 className='text-2xl text-neutral-50 font-medium mt-8 mb-4'>Lezioni che ho frequentato</h2>
-					<div className='flex gap-2 flex-wrap'>
-						{['Analisi matematica', 'Programmazione', 'Algebra e Geometria', 'Algoritmi e Strutture dati', 'Architetture degli elaboratori'].map(lesson => (
-							<div className='bg-neutral-50 py-1 px-6 rounded-full text-2xl font-medium text-primary-500 mb-2'>{lesson}</div>
-						))}
-					</div>
-					<h2 className='text-2xl text-neutral-50 font-medium mt-8 mb-4'>Perchè ho lasciato l'università?</h2>
-					<p className='text-2xl text-neutral-50'>
-						Ho capito che l’università non è un mondo che mi appartiene. Non so stare senza fare niente e mi sentivo di star sprecando tempo della mia vita
-					</p>
+					<FieldTitle text='Lezioni che ho frequentato' />
+					<FieldChips texts={['Analisi matematica', 'Programmazione', 'Algebra e Geometria', 'Algoritmi e Strutture dati', 'Architetture degli elaboratori']} />
+					<FieldTitle text={`Perchè ho lasciato l'università?`} />
+					<FieldDescription
+						text={`Ho capito che l'università non è un mondo che mi appartiene. Non so stare senza fare niente e mi sentivo di star sprecando tempo della mia vita`}
+					/>
 				</>
 			}
 		/>

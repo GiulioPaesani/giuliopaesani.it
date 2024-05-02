@@ -2,6 +2,9 @@ import { useState } from 'react';
 import Project, { ProjectConfig } from './Project';
 import ProjectPopup from './ProjectPopup';
 import ProjectsBackground from './ProjectsBackground';
+import FieldDescription from '../global/FieldDescription';
+import FieldTitle from '../global/FieldTitle';
+import FieldChips from '../global/FieldChips';
 
 const projects: ProjectConfig[] = [
 	{
@@ -10,10 +13,22 @@ const projects: ProjectConfig[] = [
 		startDate: 'Mag 2020',
 		endDate: 'Giu 2022',
 		job: 'Content creator',
-		thumbnail: 'https://i.postimg.cc/MZ45kGMN/Banner2.jpg',
-		description: ' slkdjf skdjh bsdkjhfbsdkjhbkfdjhdf',
+		thumbnail: 'https://i.postimg.cc/hGhMFFgW/giulioandcode.jpg',
 		buttonLabel: 'Canale Youtube',
-		buttonLink: 'https://youtube.it/@GiulioAndCode'
+		buttonLink: 'https://youtube.it/@GiulioAndCode',
+		fields: (
+			<>
+				<FieldDescription
+					text='Video tutorial e di intrattenimento sul mondo della programmazione. Ho costruito una mia piccola community dove ancora oggi si riuniscono tanti
+						piccoli sviluppatori e da cui ho imparato tanto'
+				/>
+				<FieldTitle text='Perchè ho smesso di farlo?' />
+				<FieldDescription
+					text='Era un grande lavoro di studio, dedizione e impegno, ma non riuscivo a dedicarci tanto tempo come avrei voluto. Ho preferisco dedicarmi più a progetti
+					pratici personali'
+				/>
+			</>
+		)
 	},
 	{
 		name: 'PlayTourn',
@@ -21,10 +36,19 @@ const projects: ProjectConfig[] = [
 		startDate: 'Mar 2021',
 		endDate: null,
 		job: 'App developer - Socio',
-		thumbnail: 'https://i.postimg.cc/MZ45kGMN/Banner2.jpg',
-		description: ' slkdjf skdjh bsdkjhfbsdkjhbkfdjhdf',
+		thumbnail: 'https://i.postimg.cc/15KRV2Fq/playtourn.jpg',
 		buttonLabel: 'Sito ufficiale',
-		buttonLink: 'https://www.google.it'
+		buttonLink: 'https://www.playtourn.com/',
+		fields: (
+			<>
+				<FieldDescription
+					text='Un bot Discord per creare e gestire in maniera professionale tornei di videogiochi, dal processo di iscrizione, alla gestione delle partite, fino alla
+					creazione di classifiche'
+				/>
+				<FieldTitle text='Di cosa mi occupo?' />
+				<FieldChips texts={['Progettazione app', 'Realizzazione app node.js']} />
+			</>
+		)
 	},
 	{
 		name: 'YouTube',
@@ -32,10 +56,16 @@ const projects: ProjectConfig[] = [
 		startDate: 'Set 2021',
 		endDate: null,
 		job: 'Content creator',
-		thumbnail: 'https://i.postimg.cc/MZ45kGMN/Banner2.jpg',
-		description: ' slkdjf skdjh bsdkjhfbsdkjhbkfdjhdf',
-		buttonLabel: 'Sito ufficiale',
-		buttonLink: 'https://www.google.it'
+		thumbnail: 'https://i.postimg.cc/L8Ddmg7d/giulio.png',
+		buttonLabel: 'Canale YouTube',
+		buttonLink: 'https://youtube.it/@GiulioAndBasta',
+		fields: (
+			<>
+				<FieldDescription text='Un canale dove racconto a pieno la mia vita, racconto i miei pensieri, il percorso verso i miei obbiettivi e la mia quotidianità' />
+				<FieldTitle text='Perchè mi piace farlo?' />
+				<FieldDescription text='Come persona molto introversa, raccontare quello che faccio e quello che penso mi aiuta tantissimo a esternare quello che provo e a focalizzarmi sui miei obbiettivi' />
+			</>
+		)
 	},
 	{
 		name: 'Jiulien',
@@ -43,10 +73,16 @@ const projects: ProjectConfig[] = [
 		startDate: 'Nov 2023',
 		endDate: null,
 		job: 'App developer - UI Designer - Co-Founder',
-		thumbnail: 'https://i.postimg.cc/MZ45kGMN/Banner2.jpg',
-		description: ' slkdjf skdjh bsdkjhfbsdkjhbkfdjhdf',
+		thumbnail: 'https://i.postimg.cc/nzXm277q/jiulien.jpg',
 		buttonLabel: 'Sito ufficiale',
-		buttonLink: 'https://www.google.it'
+		buttonLink: 'https://jiulien.com/',
+		fields: (
+			<>
+				<FieldDescription text='Un bot Discord per tutte le community, funzioni base utili per la gestione di un server' />
+				<FieldTitle text='Di cosa mi occupo?' />
+				<FieldChips texts={['Progettazione design sito web', 'Realizzazione app node.js']} />
+			</>
+		)
 	}
 ];
 

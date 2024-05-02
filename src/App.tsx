@@ -11,7 +11,7 @@ import Social from './components/Social';
 
 const App = () => {
 	return (
-		<main className='md:container max-w-[95%] m-auto px-6 gap-32 flex flex-col pb-16'>
+		<main className='md:container max-w-[95%] m-auto px-6 gap-32 lg:gap-40 flex flex-col pb-16'>
 			<Navbar />
 			<Header />
 			<Presentation />

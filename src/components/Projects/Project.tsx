@@ -5,9 +5,9 @@ export type ProjectConfig = {
 	endDate: string | null;
 	job: string;
 	thumbnail: string;
-	description: string;
 	buttonLabel: string;
 	buttonLink: string;
+	fields: JSX.Element;
 };
 
 type ProjectProps = {
