@@ -13,12 +13,12 @@ const Button = ({ type, label, icon, className, onClick }: ButtonProps) => {
 		type === 'primary'
 			? 'text-neutral-50 bg-primary-500 hover:bg-primary-600 active:bg-primary-700'
 			: 'text-primary-500 bg-neutral-50 hover:bg-primary-50 active:bg-primary-100'
-	} ${type === 'secondary' ? 'border-primary-500 hover:border-primary-600 active:border-primary-700 border-2' : ''}`;
+	} ${type === 'secondary' && 'border-primary-500 hover:border-primary-600 active:border-primary-700 border-2'}`;
 
 	const buttonContent = (
 		<>
 			{label ?? ''}
-			{icon ? <img src={`./icons/${icon}`} alt={label ?? icon.split('.')[0]} /> : ''}
+			{icon && <img src={`./icons/${icon}`} alt={label ?? icon.split('.')[0]} />}
 		</>
 	);
 

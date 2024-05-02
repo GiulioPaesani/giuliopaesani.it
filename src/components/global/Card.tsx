@@ -24,7 +24,7 @@ const Card = ({ startDate, endDate, onClickCloseButton, title, subTitle, buttonL
 			</div>
 			<h2 className='text-3xl font-medium text-neutral-50 my-2'>{title}</h2>
 			<h3 className='text-2xl font-light text-primary-200'>{subTitle}</h3>
-			{thumbnail && <div className='w-full h-48 rounded-lg bg-cover bg-center my-6' style={{ backgroundImage: `url("${thumbnail}")` }}></div>}
+			{thumbnail && <div className='w-full h-36 smh-48 rounded-lg bg-cover bg-center my-6' style={{ backgroundImage: `url("${thumbnail}")` }}></div>}
 			{fields}
 			<Button type='tertiary' label={buttonLabel} icon='external-link.svg' onClick={buttonLink} className='mt-12' />
 		</div>

@@ -20,7 +20,7 @@ const Project = ({ index, project, setPopup }: ProjectProps) => {
 	return (
 		<>
 			<div
-				className={`${index === 0 ? 'h-[60%]' : ''} ${
+				className={`${index === 0 && 'h-[60%]'} ${
 					index === 0 ? 'mt-0' : index === 1 ? 'mt-40' : index === 2 ? 'mt-60' : 'mt-[500px]'
 				} relative cursor-pointer group`}
 				onClick={() => setPopup(index)}>

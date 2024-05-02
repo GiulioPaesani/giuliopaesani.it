@@ -18,7 +18,7 @@ const SocialCard = ({ icon, name, subTitle, link }: SocialCardProps) => {
 					<img src={`./icons/${icon}`} alt={name} className='size-8' />
 					<span className='text-neutral-50 text-xl font-light ml-4'>{name}</span>
 				</div>
-				{subTitle && <div className='text-2xl font-medium text-neutral-50 mt-3'>{!isCopied ? subTitle : 'Email copiata'}</div>}
+				{subTitle && <div className='text-xl smtext-2xl font-medium text-neutral-50 mt-3'>{!isCopied ? subTitle : 'Email copiata'}</div>}
 			</div>
 			<Button
 				type='tertiary'

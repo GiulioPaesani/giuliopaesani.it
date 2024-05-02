@@ -4,7 +4,7 @@ import HighSchool from './HighSchool';
 const Education = () => {
 	return (
 		<div id='istruzione'>
-			<h3 className='text-center text-3xl font-medium text-neutral-950 block xl:hidden'>Istruzione</h3>
+			<h3 className='text-center text-3xl font-medium text-neutral-950 block xl:hidden mb-16'>Istruzione</h3>
 			<div className='flex gap-40'>
 				<div className='w-full xl:w-1/2 hidden xl:block'>
 					<h3 className='text-center text-3xl font-medium text-neutral-950'>Istruzione</h3>
