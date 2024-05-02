@@ -4,9 +4,10 @@ type ButtonProps = {
 	icon?: string;
 	className?: string;
 	onClick: string | (() => any);
+	download?: boolean;
 };
 
-const Button = ({ type, label, icon, className, onClick }: ButtonProps) => {
+const Button = ({ type, label, icon, className, onClick, download }: ButtonProps) => {
 	const buttonClasses = `${className ?? ''} w-fit text-xl font-medium ${
 		label ? 'py-2 px-6' : 'py-2.5 px-2.5'
 	} rounded-lg cursor-pointer flex gap-2 select-none ease-in-out duration-200 ${
@@ -23,11 +24,19 @@ const Button = ({ type, label, icon, className, onClick }: ButtonProps) => {
 	);
 
 	if (typeof onClick === 'string') {
-		return (
-			<a href={onClick} className={buttonClasses}>
-				{buttonContent}
-			</a>
-		);
+		if (!download) {
+			return (
+				<a href={onClick} className={buttonClasses}>
+					{buttonContent}
+				</a>
+			);
+		} else {
+			return (
+				<a href={onClick} download='Giulio_Paesani_Curriculum.pdf' className={buttonClasses}>
+					{buttonContent}
+				</a>
+			);
+		}
 	} else {
 		return (
 			<div onClick={onClick} className={buttonClasses}>
