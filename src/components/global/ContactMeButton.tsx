@@ -6,8 +6,8 @@ type ContactMeButtonProps = {
 };
 
 const ContactMeButton = ({ className, side }: ContactMeButtonProps) => {
-	const [isHover, setHover] = useState(false);
-	const [isCopied, setCopied] = useState(false);
+	const [isHover, setHover] = useState<boolean>(false);
+	const [isCopied, setCopied] = useState<boolean>(false);
 
 	return (
 		<div

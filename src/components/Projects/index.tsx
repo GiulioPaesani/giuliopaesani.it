@@ -87,7 +87,7 @@ const projects: ProjectConfig[] = [
 ];
 
 const Projects = () => {
-	const [openedPopupIndex, setOpenedPopupIndex] = useState(null);
+	const [openedPopupIndex, setOpenedPopupIndex] = useState<number | null>(null);
 
 	return (
 		<div id='progetti'>

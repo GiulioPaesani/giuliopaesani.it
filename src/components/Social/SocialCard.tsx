@@ -9,7 +9,7 @@ type SocialCardProps = {
 };
 
 const SocialCard = ({ icon, name, subTitle, link }: SocialCardProps) => {
-	const [isCopied, setCopied] = useState(false);
+	const [isCopied, setCopied] = useState<boolean>(false);
 
 	return (
 		<div className='bg-primary-500 p-6 rounded-lg flex items-center w-full max-w-[400px] m-auto'>
