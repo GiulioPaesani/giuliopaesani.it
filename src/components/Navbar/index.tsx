@@ -7,7 +7,7 @@ const Navbar = () => {
 		<div className='w-full h-20 flex items-center sticky top-0 bg-neutral-50/80 z-50'>
 			<NavbarIcon />
 			<NavbarOptions />
-			<ContactMeButton className='ml-auto lg:ml-12' />
+			<ContactMeButton className='ml-auto lg:ml-12' side='right' />
 		</div>
 	);
 };

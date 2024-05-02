@@ -9,7 +9,7 @@ const Header = () => {
 			<HiringText />
 			<Title />
 			<Subtitle />
-			<ContactMeButton />
+			<ContactMeButton side='left' />
 		</div>
 	);
 };
