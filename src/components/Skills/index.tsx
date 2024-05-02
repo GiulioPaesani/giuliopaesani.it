@@ -31,13 +31,7 @@ const Skills = () => {
 			</div>
 			<div>
 				<p className='text-center text-xl text-neutral-950'>Altre competenze secondarie su</p>
-				<Button
-					type='secondary'
-					label='Linkedin'
-					icon='external-link.svg'
-					onClick='https://www.linkedin.com/in/giulio-paesani-463b291ba/'
-					className='m-auto mt-2'
-				/>
+				<Button type='secondary' label='Linkedin' icon='external-link.svg' onClick='https://www.linkedin.com/in/giulio-paesani/' className='m-auto mt-2' />
 			</div>
 		</div>
 	);
