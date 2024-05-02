@@ -21,7 +21,7 @@ const Project = ({ index, project, setPopup }: ProjectProps) => {
 		<>
 			<div
 				className={`${index === 0 ? 'h-[60%]' : ''} ${
-					index === 0 ? 'mt-0' : index === 1 ? 'mt-40' : index === 2 ? 'mt-56' : 'mt-[500px]'
+					index === 0 ? 'mt-0' : index === 1 ? 'mt-40' : index === 2 ? 'mt-60' : 'mt-[500px]'
 				} relative cursor-pointer group`}
 				onClick={() => setPopup(index)}>
 				<div className='w-14 sm:w-48 h-14 bg-primary-500 absolute rounded-lg flex items-center -top-16 -left-[24px] sm:-left-[96px] group-hover:-top-20 ease-in-out duration-200'>

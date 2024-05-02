@@ -9,24 +9,14 @@ type ProjectPopupProps = {
 const ProjectPopup = ({ project, setPopup }: ProjectPopupProps) => {
 	if (!project) return <></>;
 
-	const scrollTop = document.documentElement.scrollTop;
-	const scrollLeft = document.documentElement.scrollLeft;
-
-	window.onscroll = () => window.scrollTo(scrollLeft, scrollTop);
-
-	const enableScroll = () => (window.onscroll = null);
-
 	const { name, startDate, endDate, job, thumbnail, buttonLabel, buttonLink, fields } = project;
 
 	return (
-		<div className=' bg-neutral-950/50 fixed top-0 left-0 z-50  w-full h-full flex items-center justify-center'>
+		<div className=' bg-neutral-950/50 fixed top-0 left-0 z-50 w-full h-full flex items-center justify-center'>
 			<Card
 				startDate={startDate}
 				endDate={endDate}
-				onClickCloseButton={() => {
-					setPopup(null);
-					enableScroll();
-				}}
+				onClickCloseButton={() => setPopup(null)}
 				title={name}
 				subTitle={job}
 				buttonLabel={buttonLabel}
