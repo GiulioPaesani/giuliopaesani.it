@@ -1,5 +1,5 @@
 const ProfileImage = () => {
-	return <div className='bg-neutral-300 w-1/2 rounded-lg hidden lg:block'>{/* <img src='./giuliopaesani.jpg' alt='Giulio Paesani' className='w-full' /> */}</div>;
+	return <div className='w-1/2 rounded-lg hidden lg:block bg-cover bg-top' style={{ backgroundImage: `url("giuliopaesani.jpg")` }}></div>;
 };
 
 export default ProfileImage;
