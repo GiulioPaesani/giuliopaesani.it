@@ -8,7 +8,7 @@ const PersonalDescription = () => {
 			grande. Ho capito però che lo studio non è per me e voglio da ora mettere le mani in pasta
 			<br />
 			<br />
-			Penso di essere un ragazzo intraprendente, che sia adatta ad ogni situazione, introverso ma sempre pronto a spingersi oltre i propri limiti
+			Sono un ragazzo intraprendente e sempre pronto a spingersi oltre i propri limiti
 		</p>
 	);
 };
