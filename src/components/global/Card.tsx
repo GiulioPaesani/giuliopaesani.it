@@ -14,7 +14,7 @@ type CardProps = {
 
 const Card = ({ startDate, endDate, onClickCloseButton, title, subTitle, buttonLabel, buttonLink, thumbnail, fields }: CardProps) => {
 	return (
-		<div className={`bg-primary-500 rounded-lg  ${onClickCloseButton ? 'w-4/5 lg:w-2/5' : 'w-full'} p-6`}>
+		<div className={`bg-primary-500 rounded-lg ${onClickCloseButton ? 'w-4/5 lg:w-2/5 max-h-[90vh]' : 'w-full'} p-6 overflow-y-scroll`}>
 			<div className='flex items-center gap-2'>
 				<h4 className='text-xl font-light text-primary-200'>{startDate}</h4>
 				<div className='size-1 bg-primary-200 rounded-full'></div>
