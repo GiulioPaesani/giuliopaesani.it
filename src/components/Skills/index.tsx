@@ -15,8 +15,12 @@ const skills = [
 		icon: 'css.png'
 	},
 	{
-		label: 'React - Next.js',
+		label: 'React',
 		icon: 'react.png'
+	},
+	{
+		label: 'Angular',
+		icon: 'angular.png'
 	}
 ];
 
