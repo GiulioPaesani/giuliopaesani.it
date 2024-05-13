@@ -20,13 +20,13 @@ const Card = ({ startDate, endDate, onClickCloseButton, title, subTitle, buttonL
 				<div className='size-1 bg-primary-200 rounded-full'></div>
 				<h4 className='text-xl font-light text-primary-200'>{endDate ?? 'Presente'}</h4>
 
-				{onClickCloseButton && <Button type='tertiary' icon='x.svg' onClick={onClickCloseButton} className='ml-auto' />}
+				{onClickCloseButton && <Button type='tertiary' icon='x.svg' alt='Chiudi il popup' onClick={onClickCloseButton} className='ml-auto' />}
 			</div>
 			<h2 className='text-3xl font-medium text-neutral-50 my-2'>{title}</h2>
 			<h3 className='text-2xl font-light text-primary-200'>{subTitle}</h3>
 			{thumbnail && <div className='w-full h-36 smh-48 rounded-lg bg-cover bg-center my-6' style={{ backgroundImage: `url("${thumbnail}")` }}></div>}
 			{fields}
-			<Button type='tertiary' label={buttonLabel} icon='external-link.svg' onClick={buttonLink} className='mt-12' />
+			<Button type='tertiary' label={buttonLabel} icon='external-link.svg' alt='Maggiori informazioni' onClick={buttonLink} className='mt-12' />
 		</div>
 	);
 };

@@ -25,7 +25,7 @@ const Project = ({ index, project, setPopup }: ProjectProps) => {
 				} relative cursor-pointer group`}
 				onClick={() => setPopup(index)}>
 				<div className='w-14 sm:w-48 h-14 bg-primary-500 absolute rounded-lg flex items-center -top-16 -left-[24px] sm:-left-[96px] group-hover:-top-20 ease-in-out duration-200'>
-					<img className='size-10 rounded-lg mx-2 sm:mx-4' src={`./${project.icon}`} alt={project.name} />
+					<img className='size-10 rounded-lg mx-2 sm:mx-4' src={`./${project.icon}`} alt={`Maggiori informazioni sul progetto ${project.name}`} />
 					<span className='text-2xl text-neutral-50 hidden sm:block'>{project.name}</span>
 				</div>
 

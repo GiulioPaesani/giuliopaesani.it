@@ -1,21 +1,28 @@
 {
   "short_name": "Giulio Paesani",
-  "name": "Giulio Paesani - Front-end developer",
+  "name": "Giulio Paesani - Front-end Developer",
+  "description": "Giulio Paesani Portfolio - Front-end developer",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "public/icon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
     },
     {
-      "src": "favicon.ico",
-      "type": "image/x-icon",
-      "sizes": "192x192"
+      "src": "public/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
     },
     {
-      "src": "favicon.ico",
-      "type": "image/x-icon",
-      "sizes": "512x512"
+      "src": "public/icon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "public/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
   "start_url": ".",

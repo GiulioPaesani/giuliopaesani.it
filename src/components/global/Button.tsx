@@ -5,9 +5,10 @@ type ButtonProps = {
 	className?: string;
 	onClick: string | (() => any);
 	download?: boolean;
+	alt: string;
 };
 
-const Button = ({ type, label, icon, className, onClick, download }: ButtonProps) => {
+const Button = ({ type, label, icon, className, onClick, download, alt }: ButtonProps) => {
 	const buttonClasses = `${className ?? ''} w-fit text-xl font-medium ${
 		label ? 'py-2 px-6' : 'py-2.5 px-2.5'
 	} rounded-lg cursor-pointer flex gap-2 select-none ease-in-out duration-200 ${
@@ -19,7 +20,7 @@ const Button = ({ type, label, icon, className, onClick, download }: ButtonProps
 	const buttonContent = (
 		<>
 			{label ?? ''}
-			{icon && <img src={`./icons/${icon}`} alt={label ?? icon.split('.')[0]} />}
+			{icon && <img width='24px' height='24px' src={`./icons/${icon}`} alt={alt} />}
 		</>
 	);
 

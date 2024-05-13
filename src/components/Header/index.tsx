@@ -13,7 +13,7 @@ const Header = () => {
 
 			<div className='flex gap-4 flex-wrap'>
 				<ContactMeButton side='left' />
-				<Button type='secondary' label='Download CV' icon='download.svg' onClick='Giulio_Paesani_Curriculum.pdf' download={true} />
+				<Button type='secondary' label='Download CV' icon='download.svg' alt='Download del curriculum' onClick='Giulio_Paesani_Curriculum.pdf' download={true} />
 			</div>
 		</div>
 	);

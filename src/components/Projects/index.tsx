@@ -9,7 +9,7 @@ import FieldChips from '../global/FieldChips';
 const projects: ProjectConfig[] = [
 	{
 		name: 'YouTube',
-		icon: 'youtube.png',
+		icon: 'youtube.webp',
 		startDate: 'Mag 2020',
 		endDate: 'Giu 2022',
 		job: 'Content creator',
@@ -32,7 +32,7 @@ const projects: ProjectConfig[] = [
 	},
 	{
 		name: 'PlayTourn',
-		icon: 'playtourn.png',
+		icon: 'playtourn.webp',
 		startDate: 'Mar 2021',
 		endDate: null,
 		job: 'App developer - Socio',
@@ -52,7 +52,7 @@ const projects: ProjectConfig[] = [
 	},
 	{
 		name: 'YouTube',
-		icon: 'youtube.png',
+		icon: 'youtube.webp',
 		startDate: 'Set 2021',
 		endDate: null,
 		job: 'Content creator',
@@ -69,7 +69,7 @@ const projects: ProjectConfig[] = [
 	},
 	{
 		name: 'Jiulien',
-		icon: 'jiulien.png',
+		icon: 'jiulien.webp',
 		startDate: 'Nov 2023',
 		endDate: null,
 		job: 'App developer - UI Designer - Co-Founder',

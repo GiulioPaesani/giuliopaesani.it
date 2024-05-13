@@ -4,23 +4,23 @@ import Skill from './Skill';
 const skills = [
 	{
 		label: 'JavaScript',
-		icon: 'javascript.png'
+		icon: 'javascript.svg'
 	},
 	{
 		label: 'TypeScript',
-		icon: 'typescript.png'
+		icon: 'typescript.svg'
 	},
 	{
 		label: 'CSS',
-		icon: 'css.png'
+		icon: 'css.svg'
 	},
 	{
 		label: 'React',
-		icon: 'react.png'
+		icon: 'react.svg'
 	},
 	{
 		label: 'Angular',
-		icon: 'angular.png'
+		icon: 'angular.svg'
 	}
 ];
 
@@ -35,7 +35,14 @@ const Skills = () => {
 			</div>
 			<div>
 				<p className='text-center text-xl text-neutral-950'>Altre competenze secondarie su</p>
-				<Button type='secondary' label='Linkedin' icon='external-link.svg' onClick='https://www.linkedin.com/in/giulio-paesani/' className='m-auto mt-2' />
+				<Button
+					type='secondary'
+					label='Linkedin'
+					icon='external-link.svg'
+					alt='Link al profilo Linkedin'
+					onClick='https://www.linkedin.com/in/giulio-paesani/'
+					className='m-auto mt-2'
+				/>
 			</div>
 		</div>
 	);
