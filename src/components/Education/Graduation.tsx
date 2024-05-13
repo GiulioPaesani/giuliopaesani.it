@@ -7,7 +7,7 @@ const Graduation = () => {
 	return (
 		<Card
 			startDate='Set 2023'
-			endDate='Giu 2024'
+			endDate='Apr 2024'
 			title='Ingegneria e Scienze Informatiche'
 			subTitle='Campus di Cesena - Università di Bologna'
 			buttonLabel='Il mio corso'
