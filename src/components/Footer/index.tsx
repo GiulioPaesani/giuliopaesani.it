@@ -3,7 +3,7 @@ import Button from '../global/Button';
 const Footer = () => {
 	return (
 		<div>
-			<p className='text-center text-xl text-neutral-300'>Sito progettato e realizzato da me</p>
+			<p className='text-center text-xl text-neutral-700'>Sito progettato e realizzato da me</p>
 			<Button
 				type='secondary'
 				label='GitHub'

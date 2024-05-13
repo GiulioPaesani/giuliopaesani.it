@@ -7,8 +7,8 @@ type FieldChipsProps = {
 const FieldChips = ({ texts }: FieldChipsProps) => {
 	return (
 		<div className='flex gap-2 flex-wrap'>
-			{texts.map(text => (
-				<FieldChip text={text} />
+			{texts.map((text, index) => (
+				<FieldChip text={text} key={index} />
 			))}
 		</div>
 	);

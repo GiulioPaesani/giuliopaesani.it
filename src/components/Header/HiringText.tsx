@@ -2,7 +2,7 @@ const HiringText = () => {
 	return (
 		<div className='flex items-center mb-4'>
 			<div className='size-4 bg-[#45AF56] rounded-full hiringAnimation m-3'></div>
-			<p className='text-lg sm:text-2xl text-neutral-300 uppercase'>Disponibile per un'assunzione</p>
+			<p className='text-lg sm:text-2xl text-neutral-700 uppercase'>Disponibile per un'assunzione</p>
 		</div>
 	);
 };

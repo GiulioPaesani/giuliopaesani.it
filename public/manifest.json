@@ -4,25 +4,25 @@
   "description": "Giulio Paesani Portfolio - Front-end developer",
   "icons": [
     {
-      "src": "public/icon-16.png",
+      "src": "icon-16.png",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "public/icon-32.png",
+      "src": "icon-32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "public/icon-64.png",
+      "src": "icon-64.png",
       "sizes": "64x64",
       "type": "image/png"
     },
     {
-      "src": "public/icon-512.png",
+      "src": "icon-512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "maskable"
+      "purpose": "any"
     }
   ],
   "start_url": ".",
