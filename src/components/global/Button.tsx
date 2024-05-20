@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 type ButtonProps = {
 	type: 'primary' | 'secondary' | 'tertiary';
 	label?: string;
@@ -9,6 +11,8 @@ type ButtonProps = {
 };
 
 const Button = ({ type, label, icon, className, onClick, download, alt }: ButtonProps) => {
+	const navigate = useNavigate();
+
 	const buttonClasses = `${className ?? ''} w-fit text-xl font-medium ${
 		label ? 'py-2 px-6' : 'py-2.5 px-2.5'
 	} rounded-lg cursor-pointer flex gap-2 select-none ease-in-out duration-200 ${
@@ -25,7 +29,13 @@ const Button = ({ type, label, icon, className, onClick, download, alt }: Button
 	);
 
 	if (typeof onClick === 'string') {
-		if (!download) {
+		if (!download && onClick.startsWith('/')) {
+			return (
+				<button onClick={() => navigate(onClick)} className={buttonClasses}>
+					{buttonContent}
+				</button>
+			);
+		} else if (!download) {
 			return (
 				<a href={onClick} className={buttonClasses}>
 					{buttonContent}
@@ -40,9 +50,9 @@ const Button = ({ type, label, icon, className, onClick, download, alt }: Button
 		}
 	} else {
 		return (
-			<div onClick={onClick} className={buttonClasses}>
+			<button onClick={onClick} className={buttonClasses}>
 				{buttonContent}
-			</div>
+			</button>
 		);
 	}
 };
