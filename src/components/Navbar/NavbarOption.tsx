@@ -26,7 +26,7 @@ const NavbarOption = ({ option, index }: NavbarOptionProps) => {
 			} rounded-lg hover:bg-neutral-100 active:bg-neutral-200 ease-in-out duration-200 cursor-pointer flex gap-2`}
 			onClick={onClickAction}>
 			{option}
-			{option === 'Portfolio' && <img width='24px' height='24px' src={`./icons/external-link2.svg`} alt={'Portofolio'} />}
+			{option === 'Portfolio' && <img width='24px' height='24px' src={`./icons/external-link2.svg`} alt={'Portfolio'} />}
 		</div>
 	);
 };

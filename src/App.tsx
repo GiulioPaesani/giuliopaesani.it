@@ -5,13 +5,15 @@ import Portfolio from './pages/Portfolio';
 
 const App = () => {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path='/' element={<Home />}></Route>
-				<Route path='/portfolio' element={<Portfolio />}></Route>
-				<Route path='*' element={<Navigate to='/' />}></Route>
-			</Routes>
-		</BrowserRouter>
+		<>
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<Home />}></Route>
+					<Route path='/portfolio' element={<Portfolio />}></Route>
+					<Route path='*' element={<Navigate to='/' />}></Route>
+				</Routes>
+			</BrowserRouter>
+		</>
 	);
 };
 
