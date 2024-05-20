@@ -18,7 +18,7 @@ const Graduation = () => {
 					<FieldChips texts={['Analisi matematica', 'Programmazione', 'Algebra e Geometria', 'Algoritmi e Strutture dati', 'Architetture degli elaboratori']} />
 					<FieldTitle text={`Perchè ho lasciato l'università?`} />
 					<FieldDescription
-						text={`Ho capito che l'università non è un mondo che mi appartiene. Non so stare senza fare niente e mi sentivo di star sprecando tempo della mia vita. Nel mondo informatico valgono più gli anni di esperienza lavorativa che gli anni di studio`}
+						text={`Ho capito che l'università non è un mondo che mi appartiene. Non so stare senza fare niente e mi sentivo di star sprecando tempo della mia vita. Voglio crescere professionalmente e fare esperienza sul campo`}
 					/>
 				</>
 			}
