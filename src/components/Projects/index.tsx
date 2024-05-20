@@ -92,10 +92,10 @@ const Projects = () => {
 	return (
 		<div id='progetti'>
 			<ProjectPopup project={typeof openedPopupIndex === 'number' ? projects[openedPopupIndex] : null} setPopup={setOpenedPopupIndex} />
-			<h3 className='text-center text-3xl font-medium text-neutral-950 block xl:hidden mb-36'>I miei progetti</h3>
+			<h3 className='text-center text-3xl font-medium text-neutral-950 block xl:hidden mb-36'>I miei progetti personali</h3>
 			<div className='flex gap-40 h-[544px]'>
 				<div className='w-full xl:w-1/2 hidden xl:block'>
-					<h3 className='text-center text-3xl font-medium text-neutral-950'>I miei progetti</h3>
+					<h3 className='text-center text-3xl font-medium text-neutral-950'>I miei progetti personali</h3>
 				</div>
 				<div className='w-full xl:w-1/2 relative'>
 					<ProjectsBackground />

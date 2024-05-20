@@ -1,26 +1,17 @@
 import './App.css';
-import Education from './components/Education';
-import Footer from './components/Footer';
-import Header from './components/Header';
-
-import Navbar from './components/Navbar';
-import Presentation from './components/Presentation';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Social from './components/Social';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
 
 const App = () => {
 	return (
-		<main className='md:container max-w-[95%] m-auto px-6 gap-32 lg:gap-40 flex flex-col pb-16'>
-			<Navbar />
-			<Header />
-			<Presentation />
-			<Skills />
-			<Projects />
-			<Education />
-			<Social />
-			<Footer />
-		</main>
+		<BrowserRouter>
+			<Routes>
+				<Route path='/' element={<Home />}></Route>
+				<Route path='/portfolio' element={<Portfolio />}></Route>
+				<Route path='*' element={<Navigate to='/' />}></Route>
+			</Routes>
+		</BrowserRouter>
 	);
 };
 
