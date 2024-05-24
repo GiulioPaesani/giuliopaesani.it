@@ -14,12 +14,11 @@ const PortfolioProjects = () => {
 			/>
 			<PortfolioProject
 				title='Tombola online'
-				description='Un semplice party game dove giocare a tombola con i proprio amici e familiari'
+				description='Un semplice party game dove giocare a tombola con i propri amici e familiari'
 				thumbnail='tombola.webp'
 				url='https://tombola-online.it/'
 				githubUrl='https://github.com/GiulioPaesani/tombola-online'
 				technology='Angular'
-				inProgress={true}
 			/>
 			<FutureProjects />
 		</div>

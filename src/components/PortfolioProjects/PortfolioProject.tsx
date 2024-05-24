@@ -14,7 +14,7 @@ type PortfolioProjectProps = {
 const PortfolioProject = ({ title, description, thumbnail, url, githubUrl, technology, inProgress }: PortfolioProjectProps) => {
 	return (
 		<div className='w-[416px] p-3 bg-primary-500 rounded-lg flex flex-col gap-4'>
-			<div style={{ backgroundImage: `url(${thumbnail})` }} className='w-full h-36 bg-primary-200 bg-cover bg-center rounded-md' />
+			<div style={{ backgroundImage: `url(${thumbnail})` }} className='w-full h-44 bg-primary-200 bg-cover bg-center rounded-md' />
 			<div className='w-full flex justify-between'>
 				<h3 className='text-2xl font-medium text-neutral-50'>{title}</h3>
 				<FieldChip text={technology} icon={`${technology.toLowerCase()}.svg`} />
