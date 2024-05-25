@@ -23,14 +23,37 @@ const skills = [
 		icon: 'angular.svg'
 	}
 ];
+const miniSkills = [
+	{
+		label: 'Node.js',
+		icon: 'node.svg'
+	},
+	{
+		label: 'Git',
+		icon: 'git.svg'
+	},
+	{
+		label: 'MongoDB',
+		icon: 'mongodb.svg'
+	},
+	{
+		label: 'Docker',
+		icon: 'docker.svg'
+	}
+];
 
 const Skills = () => {
 	return (
 		<div>
 			<h3 className='text-center text-3xl font-medium text-neutral-950'>Competenze principali</h3>
-			<div className='flex justify-around mt-16 mb-10 flex-wrap'>
+			<div className='flex justify-around mt-16 mb-6 flex-wrap'>
 				{skills.map(({ label, icon }, index) => (
 					<Skill label={label} icon={icon} key={index} />
+				))}
+			</div>
+			<div className='flex justify-around mb-10 flex-wrap'>
+				{miniSkills.map(({ label, icon }, index) => (
+					<Skill label={label} icon={icon} key={index} mini={true} />
 				))}
 			</div>
 			<div>
