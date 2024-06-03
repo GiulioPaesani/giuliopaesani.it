@@ -1,6 +1,8 @@
+import SectionTitle from '../components/Header/SectionTitle';
 import Presentation from '../components/Presentation/Presentation';
 import Header from './components/Header/Header';
 import PersonalInfos from './components/Presentation/PersonalInfos';
+import Skills from './components/Skills/Skills';
 
 const Home = () => {
 	return (
@@ -22,6 +24,11 @@ const Home = () => {
 				infos={<PersonalInfos />}
 				image='/giuliopaesani.webp'
 			/>
+
+			<div>
+				<SectionTitle text='Le mie competenze' />
+				<Skills />
+			</div>
 		</>
 	);
 };

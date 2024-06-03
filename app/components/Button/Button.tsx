@@ -1,7 +1,5 @@
-'use client';
-
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 type ButtonProps = {
 	type: 'primary' | 'secondary' | 'tertiary';
@@ -14,8 +12,6 @@ type ButtonProps = {
 };
 
 const Button = ({ type, label, icon, className, onClick, download, alt }: ButtonProps) => {
-	const router = useRouter();
-
 	const buttonClasses = `${className ?? ''} w-fit text-xl font-medium ${
 		label ? 'py-2 px-6' : 'py-2.5 px-2.5'
 	} rounded-lg cursor-pointer flex gap-2 select-none ease-in-out duration-200 ${
@@ -34,9 +30,9 @@ const Button = ({ type, label, icon, className, onClick, download, alt }: Button
 	if (typeof onClick === 'string') {
 		if (!download && onClick.startsWith('/')) {
 			return (
-				<button onClick={() => router.push(onClick)} className={buttonClasses}>
+				<Link href={onClick} className={buttonClasses}>
 					{buttonContent}
-				</button>
+				</Link>
 			);
 		} else if (!download) {
 			return (
