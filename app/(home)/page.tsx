@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import PersonalInfos from './components/Presentation/PersonalInfos';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
+import Social from './components/Social/Social';
 
 const Home = () => {
 	return (
@@ -29,6 +30,7 @@ const Home = () => {
 			<Skills />
 			<Projects />
 			<Education />
+			<Social />
 		</>
 	);
 };
