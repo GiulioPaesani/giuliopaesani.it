@@ -1,4 +1,5 @@
 import Button from '@/app/components/Button/Button';
+import SectionTitle from '@/app/components/Header/SectionTitle';
 import MiniTool from '@/app/components/Tool/MiniTool';
 import Tool from '@/app/components/Tool/Tool';
 
@@ -45,7 +46,8 @@ const MINI_SKILLS = [
 
 const Skills = () => {
 	return (
-		<>
+		<div>
+			<SectionTitle text='Le mie competenze' />
 			<div className='flex justify-around mt-16 mb-6 flex-wrap'>
 				{SKILLS.map(({ label, icon }, index) => (
 					<Tool label={label} icon={icon} key={index} />
@@ -60,7 +62,7 @@ const Skills = () => {
 				<p className='text-center text-xl text-neutral-950'>Ti mostro nel pratico cosa so fare</p>
 				<Button type='secondary' label='Il mio portfolio' icon='external-link.svg' alt='Link al mio portfolio' onClick='/portfolio' className='m-auto mt-2' />
 			</div>
-		</>
+		</div>
 	);
 };
 

@@ -2,6 +2,7 @@ import SectionTitle from '../components/Header/SectionTitle';
 import Presentation from '../components/Presentation/Presentation';
 import Header from './components/Header/Header';
 import PersonalInfos from './components/Presentation/PersonalInfos';
+import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 
 const Home = () => {
@@ -25,10 +26,9 @@ const Home = () => {
 				image='/giuliopaesani.webp'
 			/>
 
-			<div>
-				<SectionTitle text='Le mie competenze' />
-				<Skills />
-			</div>
+			<Skills />
+
+			<Projects />
 		</>
 	);
 };
