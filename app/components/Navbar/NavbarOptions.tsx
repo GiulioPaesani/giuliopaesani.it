@@ -1,6 +1,6 @@
 import NavbarOption, { Option } from './NavbarOption';
 
-const OPTIONS: Option[] = [
+export const OPTIONS: Option[] = [
 	{
 		label: 'Chi sono',
 		path: '/',

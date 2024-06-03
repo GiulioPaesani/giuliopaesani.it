@@ -60,7 +60,7 @@ const Skills = () => {
 			</div>
 			<div>
 				<p className='text-center text-xl text-neutral-950'>Ti mostro nel pratico cosa so fare</p>
-				<Button type='secondary' label='Il mio portfolio' icon='external-link.svg' alt='Link al mio portfolio' onClick='/portfolio' className='m-auto mt-2' />
+				<Button type='secondary' label='Il mio portfolio' icon='portfolio2.svg' alt='Link al mio portfolio' onClick='/portfolio' className='m-auto mt-2' />
 			</div>
 		</div>
 	);
