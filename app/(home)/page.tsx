@@ -1,5 +1,6 @@
 import SectionTitle from '../components/Header/SectionTitle';
 import Presentation from '../components/Presentation/Presentation';
+import Education from './components/Education/Education';
 import Header from './components/Header/Header';
 import PersonalInfos from './components/Presentation/PersonalInfos';
 import Projects from './components/Projects/Projects';
@@ -25,10 +26,9 @@ const Home = () => {
 				infos={<PersonalInfos />}
 				image='/giuliopaesani.webp'
 			/>
-
 			<Skills />
-
 			<Projects />
+			<Education />
 		</>
 	);
 };
