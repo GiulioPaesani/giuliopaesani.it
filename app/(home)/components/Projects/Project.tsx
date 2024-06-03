@@ -31,7 +31,7 @@ const Project = ({ index, project, setPopup }: ProjectProps) => {
 						width={40}
 						height={40}
 						className='rounded-lg mx-2 sm:mx-4'
-						src={`/${project.icon}`}
+						src={`/icons/${project.icon}`}
 						alt={`Maggiori informazioni sul progetto ${project.name}`}
 					/>
 					<span className='text-2xl text-neutral-50 hidden sm:block'>{project.name}</span>

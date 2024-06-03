@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 import MobileMenu from './MobileMenu';
 
 const Menu = () => {
-	const [isMenuOpen, setIsMenuOpen] = useState(true);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
 		<div className='block lg:hidden ml-4'>

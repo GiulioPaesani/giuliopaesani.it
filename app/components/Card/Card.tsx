@@ -1,4 +1,6 @@
 import Button from '../Button/Button';
+import CardSubtitle from './CardSubtitle';
+import CardTitle from './CardTitle';
 
 type CardProps = {
 	startDate: string;
@@ -22,8 +24,8 @@ const Card = ({ startDate, endDate, onClickCloseButton, title, subTitle, buttonL
 
 				{onClickCloseButton && <Button type='tertiary' icon='x.svg' alt='Chiudi il popup' onClick={onClickCloseButton} className='ml-auto' />}
 			</div>
-			<h2 className='text-3xl font-medium text-neutral-50 my-2'>{title}</h2>
-			<h3 className='text-2xl font-light text-neutral-50'>{subTitle}</h3>
+			<CardTitle text={title} />
+			<CardSubtitle text={subTitle} />
 			{thumbnail && <div className='w-full h-36 smh-48 rounded-lg bg-cover bg-center my-6' style={{ backgroundImage: `url("${thumbnail}")` }}></div>}
 			{fields}
 			<Button

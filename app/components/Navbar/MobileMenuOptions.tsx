@@ -1,6 +1,6 @@
 import { SetStateAction } from 'react';
 import MobileMenuOption from './MobileMenuOption';
-import { OPTIONS } from './NavbarOptions';
+import { OPTIONS } from '@/app/constants/navbar';
 
 type MobileMenuOptionsProps = {
 	setIsMenuOpen: (value: SetStateAction<boolean>) => void;

@@ -1,17 +1,5 @@
-import NavbarOption, { Option } from './NavbarOption';
-
-export const OPTIONS: Option[] = [
-	{
-		label: 'Chi sono',
-		path: '/',
-		icon: 'me'
-	},
-	{
-		label: 'Portfolio',
-		path: '/portfolio',
-		icon: 'portfolio'
-	}
-];
+import { OPTIONS } from '@/app/constants/navbar';
+import NavbarOption from './NavbarOption';
 
 const NavbarOptions = () => {
 	return (
