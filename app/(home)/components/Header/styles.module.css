@@ -1,0 +1,17 @@
+.hiringAnimation {
+    animation: hiringAnimation 1.5s ease-in-out 0s infinite normal;
+}
+
+@keyframes hiringAnimation {
+    0% {
+        box-shadow: 0 0 0 0 #45AF56;
+    }
+
+    80% {
+        box-shadow: 0 0 0 8px #45AF5644;
+    }
+
+    100% {
+        box-shadow: 0 0 0 8px #45AF5600;
+    }
+}

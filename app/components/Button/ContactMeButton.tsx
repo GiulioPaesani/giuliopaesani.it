@@ -27,8 +27,8 @@ const ContactMeButton = ({ className, side }: ContactMeButtonProps) => {
 			}}
 			className={`${
 				className ?? ''
-			} w-fit text-xl font-medium py-2 px-6 rounded-lg cursor-pointer flex gap-2 select-none text-neutral-50 bg-primary-500 hover:bg-primary-600 active:bg-primary-700 ease-in-out duration-200 group overflow-hidden`}>
-			<div className={`h-7 w-[100px]  sm:group-hover:-translate-y-9  sm:group-hover:w-60 ease-in-out duration-200 flex flex-col`}>
+			} w-fit text-xl font-medium py-2 px-6 rounded-lg cursor-pointer flex gap-2 select-none text-neutral-50 bg-primary-500 hover:bg-primary-600 active:bg-primary-700 ease-in-out duration-200 overflow-hidden`}>
+			<div className={`h-7 w-[100px] ease-in-out duration-200 flex flex-col ${isHover ? 'sm:-translate-y-9 sm:w-60' : ''}`}>
 				<div className={`mb-2 ${side === 'right' ? 'self-end' : 'self-start'} ${isCopied && 'hidden sm:block'}`}>Contattami</div>
 				<div className={`${isCopied && 'block'} sm:hidden`}>Copiato</div>
 				<div className={`${side === 'right' ? 'self-end' : 'self-start'} hidden sm:block`}>{!isCopied ? 'giuliopaesani@gmail.com' : 'Email copiata'}</div>
