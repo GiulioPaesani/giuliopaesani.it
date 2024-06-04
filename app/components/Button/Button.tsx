@@ -23,7 +23,7 @@ const Button = ({ type, label, icon, className, onClick, download, alt }: Button
 	const buttonContent = (
 		<>
 			{label ?? ''}
-			{icon && <Image width={24} height={24} src={`./icons/${icon}`} alt={alt} />}
+			{icon && <Image width={24} height={24} src={`/icons/${icon}`} alt={alt} />}
 		</>
 	);
 

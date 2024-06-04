@@ -3,7 +3,7 @@ import { PortfolioProject } from '../portfolio/components/Projects/Project';
 const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 	{
 		id: 'jiulien',
-		image: 'jiulien.webp',
+		thumbnail: 'jiulien.webp',
 		title: 'Jiulien',
 		jobs: ['Progettazione grafica', 'Sviluppo App'],
 		description: 'Uno strumento essenziale per tutte le community Discord, funzioni base utili per la gestione di un server tra comodità e divertimento',
@@ -15,7 +15,7 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 	},
 	{
 		id: 'playtourn',
-		image: 'playtourn.webp',
+		thumbnail: 'playtourn.webp',
 		title: 'PlayTourn',
 		jobs: ['Sviluppo App'],
 		description:
@@ -28,7 +28,7 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 	},
 	{
 		id: 'tombola-online',
-		image: 'tombola.webp',
+		thumbnail: 'tombola.webp',
 		title: 'Tombola online',
 		jobs: ['Progettazione grafica', 'Sviluppo Backend', 'Sviluppo Frontend'],
 		description: 'Un party game dove giocare a tombola con i propri amici e familiari, online collegati o comodamente offline',

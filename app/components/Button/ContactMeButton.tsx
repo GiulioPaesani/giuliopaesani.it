@@ -33,7 +33,7 @@ const ContactMeButton = ({ className, side }: ContactMeButtonProps) => {
 				<div className={`${isCopied && 'block'} sm:hidden`}>Copiato</div>
 				<div className={`${side === 'right' ? 'self-end' : 'self-start'} hidden sm:block`}>{!isCopied ? 'giuliopaesani@gmail.com' : 'Email copiata'}</div>
 			</div>
-			<Image src={!isHover ? './icons/mail.svg' : './icons/copy.svg'} width={24} height={24} alt='' />
+			<Image src={!isHover ? '/icons/mail.svg' : '/icons/copy.svg'} width={24} height={24} alt='' />
 		</button>
 	);
 };

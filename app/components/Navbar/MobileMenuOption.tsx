@@ -32,7 +32,7 @@ const MobileMenuOption = ({ option, index, setIsMenuOpen }: MobileMenuOptionProp
 					: 'text-neutral-50 hover:bg-primary-600 active:bg-primary-700'
 			}`}>
 			{option.label}
-			<Image width={40} height={40} src={`./icons/${option.icon}${pathname === option.path ? '2' : '3'}.svg`} alt='' />
+			<Image width={40} height={40} src={`/icons/${option.icon}${pathname === option.path ? '2' : '3'}.svg`} alt='' />
 		</Link>
 	);
 };

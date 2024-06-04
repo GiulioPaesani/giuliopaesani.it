@@ -11,7 +11,7 @@ const Tool = ({ label, icon }: ToolProps) => {
 			<div className='w-full rounded-lg absolute bottom-0 bg-primary-500 h-[104px]'></div>
 			<div className='w-full h-full absolute bottom-0 '>
 				<Image
-					src={`./${icon}`}
+					src={`/${icon}`}
 					alt={''}
 					width={80}
 					height={80}

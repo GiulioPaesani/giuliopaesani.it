@@ -27,7 +27,7 @@ const NavbarOption = ({ option, index }: NavbarOptionProps) => {
 				pathname === option.path ? 'bg-primary-50' : ''
 			}`}>
 			{option.label}
-			<Image width={24} height={24} src={`./icons/${option.icon}.svg`} alt='' />
+			<Image width={24} height={24} src={`/icons/${option.icon}.svg`} alt='' />
 		</Link>
 	);
 };
