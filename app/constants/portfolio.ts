@@ -2,28 +2,41 @@ import { PortfolioProject } from '../portfolio/components/Projects/Project';
 
 const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 	{
-		id: 'tombola-online',
+		id: 'jiulien',
 		image: 'jiulien.webp',
 		title: 'Jiulien',
-		subTitle: 'Progettazione grafica, Sviluppo Backend, Sviluppo Frontend',
-		description: 'Un semplice party game dove giocare a tombola con i propri amici e familiari',
-		link: 'https://tombola-online.it/'
+		jobs: ['Progettazione grafica', 'Sviluppo App'],
+		description: 'Uno strumento essenziale per tutte le community Discord, funzioni base utili per la gestione di un server tra comodità e divertimento',
+		link: 'https://jiulien.com/',
+		mainTechnology: {
+			name: 'Node.js',
+			icon: 'node.svg'
+		}
 	},
 	{
-		id: 'tombola-online',
+		id: 'playtourn',
 		image: 'playtourn.webp',
 		title: 'PlayTourn',
-		subTitle: 'Progettazione grafica, Sviluppo Backend, Sviluppo Frontend',
-		description: 'Un semplice party game dove giocare a tombola con i propri amici e familiari',
-		link: 'https://tombola-online.it/'
+		jobs: ['Sviluppo App'],
+		description:
+			'Un bot Discord per creare e gestire in maniera professionale tornei di videogiochi, dal processo di iscrizione, alla gestione delle partite, fino alla creazione di classifiche',
+		link: 'https://www.playtourn.com/',
+		mainTechnology: {
+			name: 'Node.js',
+			icon: 'node.svg'
+		}
 	},
 	{
 		id: 'tombola-online',
 		image: 'tombola.webp',
 		title: 'Tombola online',
-		subTitle: 'Progettazione grafica, Sviluppo Backend, Sviluppo Frontend',
-		description: 'Un semplice party game dove giocare a tombola con i propri amici e familiari',
-		link: 'https://tombola-online.it/'
+		jobs: ['Progettazione grafica', 'Sviluppo Backend', 'Sviluppo Frontend'],
+		description: 'Un party game dove giocare a tombola con i propri amici e familiari, online collegati o comodamente offline',
+		link: 'https://tombola-online.it/',
+		mainTechnology: {
+			name: 'Angular',
+			icon: 'angular.svg'
+		}
 	}
 ];
 
