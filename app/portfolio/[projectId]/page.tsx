@@ -5,6 +5,8 @@ import Header from './components/Header/Header';
 import Button from '@/app/components/Button/Button';
 import Presentation from '@/app/components/Presentation/Presentation';
 import Jobs from '../components/Presentation/Jobs';
+import Tools from './components/Tools/Tools';
+import Links from '../components/Links/Links';
 
 type PortfolioProjectProps = {
 	params: {
@@ -35,6 +37,10 @@ const PortfolioProject = ({ params }: PortfolioProjectProps) => {
 			</div>
 
 			<Presentation description={project.longDescription} infos={<Jobs jobs={project.jobs} />} image={project.images} />
+
+			<Tools primaryTools={project.primaryTools} secondaryTools={project.secondaryTools} />
+
+			<Links link={project.link} github={project.github} />
 		</>
 	);
 };

@@ -6,7 +6,7 @@ type HeaderProps = {
 
 const Header = ({ text }: HeaderProps) => {
 	return (
-		<div className='mx-auto w-fit mt-8'>
+		<div className='mt-8 text-center'>
 			<Title text={text} />
 		</div>
 	);

@@ -6,6 +6,11 @@ import Chip from '@/app/components/Card/Chip';
 import Image from 'next/image';
 import { ReactNode } from 'react';
 
+export type PortfolioProjectTool = {
+	label: string;
+	icon: string;
+};
+
 export type PortfolioProject = {
 	id: string;
 	thumbnail: string;
@@ -13,12 +18,15 @@ export type PortfolioProject = {
 	jobs: string[];
 	description: string;
 	link: string;
-	mainTechnology: {
+	mainTool: {
 		name: string;
 		icon: string;
 	};
 	longDescription: ReactNode;
 	images: string[];
+	primaryTools: PortfolioProjectTool[];
+	secondaryTools: PortfolioProjectTool[];
+	github: string | null;
 };
 
 type ProjectProps = {
@@ -36,7 +44,7 @@ const Project = ({ project, col }: ProjectProps) => {
 				<Image src={`/${project.thumbnail}`} width={1920} height={1080} alt={project.title} className='object-cover w-full h-full' />
 
 				<div className='absolute bottom-0 w-full flex justify-center'>
-					<Chip text={project.mainTechnology.name} icon={project.mainTechnology.icon} />
+					<Chip text={project.mainTool.name} icon={project.mainTool.icon} />
 				</div>
 			</div>
 
@@ -50,7 +58,7 @@ const Project = ({ project, col }: ProjectProps) => {
 						<Image src={`/${project.thumbnail}`} width={1920} height={1080} alt={project.title} className='object-cover w-full h-full' />
 
 						<div className='absolute bottom-0 w-full flex justify-center'>
-							<Chip text={project.mainTechnology.name} icon={project.mainTechnology.icon} />
+							<Chip text={project.mainTool.name} icon={project.mainTool.icon} />
 						</div>
 					</div>
 				</div>

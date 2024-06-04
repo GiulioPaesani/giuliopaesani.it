@@ -8,12 +8,41 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 		jobs: ['Progettazione grafica', 'Sviluppo App'],
 		description: 'Uno strumento essenziale per tutte le community Discord, funzioni base utili per la gestione di un server tra comodità e divertimento',
 		link: 'https://jiulien.com/',
-		mainTechnology: {
+		mainTool: {
 			name: 'Node.js',
 			icon: 'node.svg'
 		},
 		longDescription: 'CIAOkj fnslkdjfslkdjfn sdlkj nflsdkj fnsldkfj nsldf kjsndlfjk',
-		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp']
+		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp'],
+		primaryTools: [
+			{
+				label: 'JavaScript',
+				icon: 'javascript.svg'
+			},
+			{
+				label: 'TypeScript',
+				icon: 'typescript.svg'
+			},
+			{
+				label: 'CSS',
+				icon: 'css.svg'
+			}
+		],
+		secondaryTools: [
+			{
+				label: 'Git',
+				icon: 'git.svg'
+			},
+			{
+				label: 'MongoDB',
+				icon: 'mongodb.svg'
+			},
+			{
+				label: 'Next.js',
+				icon: 'next.svg'
+			}
+		],
+		github: null
 	},
 	{
 		id: 'playtourn',
@@ -23,12 +52,41 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 		description:
 			'Un bot Discord per creare e gestire in maniera professionale tornei di videogiochi, dal processo di iscrizione, alla gestione delle partite, fino alla creazione di classifiche',
 		link: 'https://www.playtourn.com/',
-		mainTechnology: {
+		mainTool: {
 			name: 'Node.js',
 			icon: 'node.svg'
 		},
 		longDescription: 'CIAOkj fnslkdjfslkdjfn sdlkj nflsdkj fnsldkfj nsldf kjsndlfjk',
-		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp']
+		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp'],
+		primaryTools: [
+			{
+				label: 'JavaScript',
+				icon: 'javascript.svg'
+			},
+			{
+				label: 'TypeScript',
+				icon: 'typescript.svg'
+			},
+			{
+				label: 'CSS',
+				icon: 'css.svg'
+			}
+		],
+		secondaryTools: [
+			{
+				label: 'Git',
+				icon: 'git.svg'
+			},
+			{
+				label: 'MongoDB',
+				icon: 'mongodb.svg'
+			},
+			{
+				label: 'Next.js',
+				icon: 'next.svg'
+			}
+		],
+		github: ''
 	},
 	{
 		id: 'tombola-online',
@@ -37,12 +95,41 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 		jobs: ['Progettazione grafica', 'Sviluppo Backend', 'Sviluppo Frontend'],
 		description: 'Un party game dove giocare a tombola con i propri amici e familiari, online collegati o comodamente offline',
 		link: 'https://tombola-online.it/',
-		mainTechnology: {
+		mainTool: {
 			name: 'Angular',
 			icon: 'angular.svg'
 		},
 		longDescription: 'CIAOkj fnslkdjfslkdjfn sdlkj nflsdkj fnsldkfj nsldf kjsndlfjk',
-		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp']
+		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp'],
+		primaryTools: [
+			{
+				label: 'JavaScript',
+				icon: 'javascript.svg'
+			},
+			{
+				label: 'TypeScript',
+				icon: 'typescript.svg'
+			},
+			{
+				label: 'CSS',
+				icon: 'css.svg'
+			}
+		],
+		secondaryTools: [
+			{
+				label: 'Git',
+				icon: 'git.svg'
+			},
+			{
+				label: 'MongoDB',
+				icon: 'mongodb.svg'
+			},
+			{
+				label: 'Next.js',
+				icon: 'next.svg'
+			}
+		],
+		github: 'https://github.com/GiulioPaesani/tombola-online'
 	}
 ];
 
