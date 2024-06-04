@@ -11,7 +11,9 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 		mainTechnology: {
 			name: 'Node.js',
 			icon: 'node.svg'
-		}
+		},
+		longDescription: 'CIAOkj fnslkdjfslkdjfn sdlkj nflsdkj fnsldkfj nsldf kjsndlfjk',
+		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp']
 	},
 	{
 		id: 'playtourn',
@@ -24,7 +26,9 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 		mainTechnology: {
 			name: 'Node.js',
 			icon: 'node.svg'
-		}
+		},
+		longDescription: 'CIAOkj fnslkdjfslkdjfn sdlkj nflsdkj fnsldkfj nsldf kjsndlfjk',
+		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp']
 	},
 	{
 		id: 'tombola-online',
@@ -36,7 +40,9 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 		mainTechnology: {
 			name: 'Angular',
 			icon: 'angular.svg'
-		}
+		},
+		longDescription: 'CIAOkj fnslkdjfslkdjfn sdlkj nflsdkj fnsldkfj nsldf kjsndlfjk',
+		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp']
 	}
 ];
 

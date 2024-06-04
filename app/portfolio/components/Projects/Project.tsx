@@ -1,10 +1,10 @@
 import Button from '@/app/components/Button/Button';
 import CardFieldDescription from '@/app/components/Card/CardFieldDescription';
-import CardFieldTitle from '@/app/components/Card/CardFieldTitle';
 import CardSubtitle from '@/app/components/Card/CardSubtitle';
 import CardTitle from '@/app/components/Card/CardTitle';
 import Chip from '@/app/components/Card/Chip';
 import Image from 'next/image';
+import { ReactNode } from 'react';
 
 export type PortfolioProject = {
 	id: string;
@@ -17,6 +17,8 @@ export type PortfolioProject = {
 		name: string;
 		icon: string;
 	};
+	longDescription: ReactNode;
+	images: string[];
 };
 
 type ProjectProps = {
