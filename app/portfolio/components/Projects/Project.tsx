@@ -19,10 +19,9 @@ export type PortfolioProject = {
 	description: string;
 	link: string;
 	mainTool: {
-		name: string;
+		label: string;
 		icon: string;
 	};
-	longDescription: ReactNode;
 	images: string[];
 	primaryTools: PortfolioProjectTool[];
 	secondaryTools: PortfolioProjectTool[];
@@ -44,7 +43,7 @@ const Project = ({ project, col }: ProjectProps) => {
 				<Image src={`/${project.thumbnail}`} width={1920} height={1080} alt={project.title} className='object-cover w-full h-full' />
 
 				<div className='absolute bottom-0 w-full flex justify-center'>
-					<Chip text={project.mainTool.name} icon={project.mainTool.icon} />
+					<Chip text={project.mainTool.label} icon={project.mainTool.icon} />
 				</div>
 			</div>
 
@@ -58,7 +57,7 @@ const Project = ({ project, col }: ProjectProps) => {
 						<Image src={`/${project.thumbnail}`} width={1920} height={1080} alt={project.title} className='object-cover w-full h-full' />
 
 						<div className='absolute bottom-0 w-full flex justify-center'>
-							<Chip text={project.mainTool.name} icon={project.mainTool.icon} />
+							<Chip text={project.mainTool.label} icon={project.mainTool.icon} />
 						</div>
 					</div>
 				</div>

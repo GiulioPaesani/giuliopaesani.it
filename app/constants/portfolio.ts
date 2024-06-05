@@ -9,37 +9,36 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 		description: 'Uno strumento essenziale per tutte le community Discord, funzioni base utili per la gestione di un server tra comodità e divertimento',
 		link: 'https://jiulien.com/',
 		mainTool: {
-			name: 'Node.js',
+			label: 'Node.js',
 			icon: 'node.svg'
 		},
-		longDescription: 'CIAOkj fnslkdjfslkdjfn sdlkj nflsdkj fnsldkfj nsldf kjsndlfjk',
-		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp'],
+		images: ['jiulien1.webp', 'jiulien2.webp', 'jiulien3.webp'],
 		primaryTools: [
 			{
-				label: 'JavaScript',
-				icon: 'javascript.svg'
+				label: 'Node.js',
+				icon: 'node.svg'
 			},
 			{
 				label: 'TypeScript',
 				icon: 'typescript.svg'
 			},
 			{
-				label: 'CSS',
-				icon: 'css.svg'
+				label: 'Figma',
+				icon: 'figma.svg'
 			}
 		],
 		secondaryTools: [
+			{
+				label: 'Mongo DB',
+				icon: 'mongodb.svg'
+			},
 			{
 				label: 'Git',
 				icon: 'git.svg'
 			},
 			{
-				label: 'MongoDB',
-				icon: 'mongodb.svg'
-			},
-			{
-				label: 'Next.js',
-				icon: 'next.svg'
+				label: 'Docker',
+				icon: 'docker.svg'
 			}
 		],
 		github: null
@@ -53,39 +52,25 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 			'Un bot Discord per creare e gestire in maniera professionale tornei di videogiochi, dal processo di iscrizione, alla gestione delle partite, fino alla creazione di classifiche',
 		link: 'https://www.playtourn.com/',
 		mainTool: {
-			name: 'Node.js',
+			label: 'Node.js',
 			icon: 'node.svg'
 		},
-		longDescription: 'CIAOkj fnslkdjfslkdjfn sdlkj nflsdkj fnsldkfj nsldf kjsndlfjk',
-		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp'],
+		images: ['playtourn1.webp', 'playtourn2.webp'],
 		primaryTools: [
 			{
-				label: 'JavaScript',
-				icon: 'javascript.svg'
+				label: 'Node.js',
+				icon: 'node.svg'
 			},
 			{
 				label: 'TypeScript',
 				icon: 'typescript.svg'
 			},
 			{
-				label: 'CSS',
-				icon: 'css.svg'
-			}
-		],
-		secondaryTools: [
-			{
-				label: 'Git',
-				icon: 'git.svg'
-			},
-			{
-				label: 'MongoDB',
+				label: 'Mongo DB',
 				icon: 'mongodb.svg'
-			},
-			{
-				label: 'Next.js',
-				icon: 'next.svg'
 			}
 		],
+		secondaryTools: [],
 		github: ''
 	},
 	{
@@ -96,37 +81,36 @@ const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 		description: 'Un party game dove giocare a tombola con i propri amici e familiari, online collegati o comodamente offline',
 		link: 'https://tombola-online.it/',
 		mainTool: {
-			name: 'Angular',
+			label: 'Angular',
 			icon: 'angular.svg'
 		},
-		longDescription: 'CIAOkj fnslkdjfslkdjfn sdlkj nflsdkj fnsldkfj nsldf kjsndlfjk',
-		images: ['jiulien.webp', 'playtourn.webp', 'tombola.webp'],
+		images: ['tombola1.webp', 'tombola2.webp', 'tombola3.webp'],
 		primaryTools: [
 			{
-				label: 'JavaScript',
-				icon: 'javascript.svg'
+				label: 'Angular',
+				icon: 'angular.svg'
 			},
 			{
-				label: 'TypeScript',
-				icon: 'typescript.svg'
+				label: 'Express.js',
+				icon: 'express.svg'
 			},
 			{
-				label: 'CSS',
-				icon: 'css.svg'
+				label: 'Figma',
+				icon: 'figma.svg'
 			}
 		],
 		secondaryTools: [
+			{
+				label: 'Mongo DB',
+				icon: 'mongodb.svg'
+			},
 			{
 				label: 'Git',
 				icon: 'git.svg'
 			},
 			{
-				label: 'MongoDB',
-				icon: 'mongodb.svg'
-			},
-			{
-				label: 'Next.js',
-				icon: 'next.svg'
+				label: 'Docker',
+				icon: 'docker.svg'
 			}
 		],
 		github: 'https://github.com/GiulioPaesani/tombola-online'

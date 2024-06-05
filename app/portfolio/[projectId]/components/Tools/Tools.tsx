@@ -12,7 +12,7 @@ type ToolsProps = {
 const Tools = ({ primaryTools, secondaryTools }: ToolsProps) => {
 	return (
 		<div>
-			<SectionTitle text='Gli strumenti ho utilizzato' />
+			<SectionTitle text='Gli strumenti che ho utilizzato' />
 			<div className='flex justify-center gap-4 sm:gap-6 lg:gap-12 mt-16 mb-6 flex-wrap'>
 				{primaryTools.map(({ label, icon }, index) => (
 					<Tool label={label} icon={icon} key={index} />

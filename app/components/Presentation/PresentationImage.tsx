@@ -17,7 +17,7 @@ const PresentationImage = ({ image }: PresentationImageProps) => {
 
 		const timeout = setTimeout(() => {
 			setCurrentImage(currentImage >= image.length - 1 ? 0 : currentImage + 1);
-		}, 10000);
+		}, 7000);
 
 		setChangeTimeout(timeout);
 	}, [currentImage]);
@@ -54,8 +54,8 @@ const PresentationImage = ({ image }: PresentationImageProps) => {
 							}`}
 							onClick={() => setCurrentImage(index)}>
 							<div
-								className={`h-full rounded-full bg-primary-500 transition-all duration-[10000ms] ${
-									currentImage === index ? 'w-full' : 'w-0 duration-0'
+								className={`h-full rounded-full bg-primary-500 transition-all  ${
+									currentImage === index ? 'w-full duration-[7000ms]' : 'w-0 duration-0'
 								}`}></div>
 						</button>
 					))}
