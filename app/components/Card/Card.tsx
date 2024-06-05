@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Button from '../Button/Button';
 import CardSubtitle from './CardSubtitle';
 import CardTitle from './CardTitle';
@@ -26,7 +27,15 @@ const Card = ({ startDate, endDate, onClickCloseButton, title, subTitle, buttonL
 			</div>
 			<CardTitle text={title} />
 			<CardSubtitle text={subTitle} />
-			{thumbnail && <div className='w-full h-36 smh-48 rounded-lg bg-cover bg-center my-6' style={{ backgroundImage: `url("${thumbnail}")` }}></div>}
+			{thumbnail && (
+				<Image
+					width={1920}
+					height={144}
+					className='w-full h-36 smh-48 rounded-lg object-cover bg-center my-6 loadingAnimation'
+					src={`/${thumbnail}`}
+					alt={title}
+				/>
+			)}
 			{fields}
 			<Button
 				type='tertiary'
