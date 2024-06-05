@@ -1,4 +1,4 @@
-import SectionTitle from '../components/Header/SectionTitle';
+import { Metadata } from 'next';
 import Presentation from '../components/Presentation/Presentation';
 import Education from './components/Education/Education';
 import Header from './components/Header/Header';
@@ -6,6 +6,24 @@ import PersonalInfos from './components/Presentation/PersonalInfos';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Social from './components/Social/Social';
+
+export const metadata: Metadata = {
+	metadataBase: new URL('https://giuliopaesani.it'),
+	title: 'Giulio Paesani',
+	description: 'Giulio Paesani - Web developer',
+	keywords:
+		'Giulio, Giulio Paesani, Paesani Giulio, Sviluppatore web, Web developer, Frontend developer, Front-end developer, Sviluppatore Front-end, frontend, Cesena, Forlì Cesena',
+	icons: '/icon.ico',
+	manifest: '/manifest.json',
+	openGraph: {
+		title: 'Giulio Paesani',
+		description: 'Web developer',
+		images: '/homePreview.webp',
+		url: '/',
+		locale: 'it',
+		siteName: 'Giulio Paesani'
+	}
+};
 
 const Home = () => {
 	return (

@@ -14,10 +14,31 @@ type PortfolioProjectProps = {
 	};
 };
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
 	return PORTFOLIO_PROJECTS.map(project => ({
 		projectId: project.id
 	}));
+}
+
+export function generateMetadata({ params }: PortfolioProjectProps) {
+	const project = PORTFOLIO_PROJECTS.find(project => project.id === params.projectId);
+
+	if (!project) return;
+
+	return {
+		metadataBase: new URL('https://giuliopaesani.it'),
+		title: `${project.title} | Giulio Paesani`,
+		description: project.description,
+		icons: '/icon.ico',
+		openGraph: {
+			title: `${project.title} | Giulio Paesani`,
+			description: project.description,
+			images: `/${project.thumbnail}`,
+			url: `/portfolio/${project.id}`,
+			locale: 'it',
+			siteName: 'Giulio Paesani'
+		}
+	};
 }
 
 const PortfolioProject = ({ params }: PortfolioProjectProps) => {
