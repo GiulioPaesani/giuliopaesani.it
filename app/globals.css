@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.loadingAnimation {
+    animation: loadingAnimation 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes loadingAnimation {
+    from {
+        background-color: #ECEDF8;
+    }
+
+    to {
+        background-color: #9397D7;
+    }
+
+}

@@ -40,7 +40,7 @@ const Project = ({ project, col }: ProjectProps) => {
 				className={`relative rounded-lg overflow-hidden block sm:hidden ${
 					col ? 'w-full h-32 sm:h-48 xl:h-80 lg:block' : 'h-32 sm:h-full w-full sm:w-96 xl:block'
 				}`}>
-				<Image src={`/${project.thumbnail}`} width={1920} height={1080} alt={project.title} className='object-cover w-full h-full' />
+				<Image src={`/${project.thumbnail}`} width={1920} height={1080} alt={project.title} className='object-cover w-full h-full loadingAnimation' />
 
 				<div className='absolute bottom-0 w-full flex justify-center'>
 					<Chip text={project.mainTool.label} icon={project.mainTool.icon} />
@@ -54,7 +54,7 @@ const Project = ({ project, col }: ProjectProps) => {
 						<CardSubtitle text={project.jobs.join(' - ')} />
 					</div>
 					<div className={`relative rounded-lg overflow-hidden hidden sm:block h-32 w-1/2 ${col ? 'lg:hidden' : 'xl:hidden'}`}>
-						<Image src={`/${project.thumbnail}`} width={1920} height={1080} alt={project.title} className='object-cover w-full h-full' />
+						<Image src={`/${project.thumbnail}`} width={1920} height={1080} alt={project.title} className='object-cover w-full h-full loadingAnimation' />
 
 						<div className='absolute bottom-0 w-full flex justify-center'>
 							<Chip text={project.mainTool.label} icon={project.mainTool.icon} />

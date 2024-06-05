@@ -11,7 +11,7 @@ const Thumbnail = ({ thumbnail, alt }: ThumbnailProps) => {
 		<div className='relative mx-auto w-full md:w-3/4 h-56 md:h-80'>
 			<Button type='primary' label='Altri progetti' icon='back.svg' onClick='/portfolio' alt='Tutto il mio portfolio' className='absolute -top-[22px] left-8' />
 			<div className='w-full h-full rounded-lg overflow-hidden'>
-				<Image src={`/${thumbnail}`} width={1920} height={1080} className='w-full h-full object-cover' alt={alt} />
+				<Image src={`/${thumbnail}`} width={1920} height={1080} className='w-full h-full object-cover loadingAnimation' alt={alt} />
 			</div>
 		</div>
 	);

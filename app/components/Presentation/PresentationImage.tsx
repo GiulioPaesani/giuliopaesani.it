@@ -25,7 +25,7 @@ const PresentationImage = ({ image }: PresentationImageProps) => {
 	if (typeof image === 'string') {
 		return (
 			<div className='w-1/2 rounded-lg hidden lg:block overflow-hidden'>
-				<Image src={image} width={1920} height={1080} alt={image.split('.').slice(0, -1).join('.')} className='object-cover w-full h-full' />
+				<Image src={image} width={1920} height={1080} alt={image.split('.').slice(0, -1).join('.')} className='object-cover w-full h-full loadingAnimation' />
 			</div>
 		);
 	} else {
@@ -39,7 +39,7 @@ const PresentationImage = ({ image }: PresentationImageProps) => {
 							width={1920}
 							height={1080}
 							alt={x.split('.').slice(0, -1).join('.')}
-							className={`absolute top-0 left-0 object-cover w-full h-full transition-opacity duration-300 ${
+							className={`absolute top-0 left-0 object-cover w-full h-full transition-opacity duration-300 loadingAnimation ${
 								currentImage === index ? 'opacity-100' : 'opacity-0'
 							}`}
 						/>
