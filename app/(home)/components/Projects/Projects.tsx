@@ -13,10 +13,10 @@ const Projects = () => {
 	return (
 		<div id='progetti'>
 			<ProjectPopup project={typeof openedPopupIndex === 'number' ? PROJECTS[openedPopupIndex] : null} setPopup={setOpenedPopupIndex} />
-			<SectionTitle text='I miei progetti personali' className='block xl:hidden mb-36' />
+			<SectionTitle text='Il mio percorso' className='block xl:hidden mb-36' />
 			<div className='flex gap-40 h-[544px]'>
 				<div className='w-full xl:w-1/2 hidden xl:block'>
-					<SectionTitle text='I miei progetti personali' />
+					<SectionTitle text='Il mio percorso' />
 				</div>
 				<div className='w-full xl:w-1/2 relative'>
 					<ProjectsBackground />

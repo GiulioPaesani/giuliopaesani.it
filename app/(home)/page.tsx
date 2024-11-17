@@ -35,11 +35,11 @@ const Home = () => {
 						Sono da sempre appassionato alla <strong>programmazione</strong>, nello sviluppo web in particolare
 						<br />
 						<br />
-						Mi sono trasferito a <strong>Cesena</strong> per l’università, <strong>vivere da solo</strong> e avere grande indipendenza è sempre stato il mio
-						sogno più grande. Ho capito però che lo studio non è per me e voglio da ora mettere le mani in pasta
+						Mi sono trasferito a <strong>lontano</strong> dai miei genitori per l’università, <strong>vivere da solo</strong> e avere grande indipendenza è
+						sempre stato il mio sogno più grande. Ho capito però che lo studio non è per me e non riesco a stare fermo
 						<br />
 						<br />
-						Sono un ragazzo intraprendente e sempre pronto a spingersi oltre i propri limiti
+						Sono un ragazzo intraprendente, sempre pronto a spingersi oltre i propri limiti e con tanta <strong>voglia di fare</strong>
 					</>
 				}
 				infos={<PersonalInfos />}

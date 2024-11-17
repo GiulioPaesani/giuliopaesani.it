@@ -7,7 +7,7 @@ import { MINI_SKILLS, SKILLS } from '@/app/constants/skills';
 const Skills = () => {
 	return (
 		<div>
-			<SectionTitle text='Le mie competenze' />
+			<SectionTitle text='Le mie competenze principali' />
 			<div className='flex justify-center gap-4 sm:gap-6 lg:gap-12 mt-16 mb-6 flex-wrap'>
 				{SKILLS.map(({ label, icon }, index) => (
 					<Tool label={label} icon={icon} key={index} />

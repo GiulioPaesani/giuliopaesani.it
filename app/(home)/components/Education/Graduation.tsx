@@ -14,11 +14,11 @@ const Graduation = () => {
 			buttonLink='https://corsi.unibo.it/laurea/IngegneriaScienzeInformatiche'
 			fields={
 				<>
-					<CardFieldTitle text='Lezioni che ho frequentato' />
-					<Chips texts={['Analisi matematica', 'Programmazione', 'Algebra e Geometria', 'Algoritmi e Strutture dati', 'Architetture degli elaboratori']} />
+					<CardFieldTitle text='Esami che ho passato' />
+					<Chips texts={['Analisi matematica', 'Programmazione']} />
 					<CardFieldTitle text={`Perchè ho lasciato l'università?`} />
 					<CardFieldDescription
-						text={`Ho capito che l'università non è un mondo che mi appartiene. Non so stare senza fare niente e mi sentivo di star sprecando tempo della mia vita. Voglio crescere professionalmente e fare esperienza sul campo`}
+						text={`Ho capito che l'università non è un mondo che mi appartiene. Non so stare senza fare niente e mi sentivo di star sprecando tempo della mia vita. Voglio fare e fare, senza troppa routine`}
 					/>
 				</>
 			}

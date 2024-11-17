@@ -9,9 +9,9 @@ type CardProps = {
 	onClickCloseButton?: () => any;
 	title: string;
 	subTitle: string;
-	buttonLabel: string;
-	buttonLink: string;
-	thumbnail?: string;
+	buttonLabel: string | null;
+	buttonLink: string | null;
+	thumbnail?: string | null;
 	fields?: JSX.Element;
 };
 
@@ -37,14 +37,16 @@ const Card = ({ startDate, endDate, onClickCloseButton, title, subTitle, buttonL
 				/>
 			)}
 			{fields}
-			<Button
-				type='tertiary'
-				label={buttonLabel}
-				icon={!buttonLink.startsWith('/') ? 'external-link.svg' : ''}
-				alt='Maggiori informazioni'
-				onClick={buttonLink}
-				className='mt-12'
-			/>
+			{buttonLabel && buttonLink && (
+				<Button
+					type='tertiary'
+					label={buttonLabel}
+					icon={!buttonLink.startsWith('/') ? 'external-link.svg' : ''}
+					alt='Maggiori informazioni'
+					onClick={buttonLink}
+					className='mt-12'
+				/>
+			)}
 		</div>
 	);
 };
